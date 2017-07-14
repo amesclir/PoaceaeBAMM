@@ -65,6 +65,18 @@ plot(mytree,use.edge.length=T, label.offset=0.2, no.margin=TRUE, cex=0.3)
 co<-c("blue","white")
 nodelabels(pie=marg_probs$edge.length, piecol = c("blue","white"), cex=0.3)
 
+
+clade.members(158, mytree, tip.labels = T, include.nodes=F)
+
+clade.members(310, mytree, tip.labels = T, include.nodes=F)
+clade.members(149, mytree, tip.labels = T, include.nodes=F)
+clade.members(152, mytree, tip.labels = T, include.nodes=F)
+clade.members(311, mytree, tip.labels = T, include.nodes=F)
+clade.members(162, mytree, tip.labels = T, include.nodes=F)
+
+
+
+###########################################################################
 ###branch priors
 branch_priors <- getBranchShiftPriors(mytree, expectedNumberOfShifts = 3)
 branch_priors
